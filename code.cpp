@@ -11,10 +11,9 @@ public:
 
 	// Display Function
 	virtual void Display_List(Employee emp[], int n){
-		int i;
 		cout << "\n----------------------------\n Employee Details\n---------------------------\n";
 		cout << setw(10) << "Id" << setw(10) << "Name" << setw(10) << "Age" << setw(15) << "Department" << endl;
-		for (i = 0; i < n; i++){
+		for (int i = 0; i < n; i++){
 			cout << setw(10) << emp[i].Id << setw(10) << emp[i].Name << setw(10) << emp[i].age << setw(10) << emp[i].Dept << endl;
 		}
 	}
